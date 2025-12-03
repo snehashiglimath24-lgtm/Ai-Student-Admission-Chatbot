@@ -1,0 +1,35 @@
+{
+  "kcet": {
+    "name": "KCET",
+    "official": "https://kea.kar.nic.in/",
+    "eligibility": {
+      "required_subjects": ["Physics", "Mathematics"],
+      "optional_subjects": ["Chemistry", "Biology", "Electronics", "Computer Science", "Biotechnology"],
+      "min_percentage_general": 45,
+      "min_percentage_reserved": 40,
+      "min_years_in_karnataka": 7,
+      "notes": "Different rules may apply for specific categories and architecture/med/other courses. Refer to KEA brochure."
+    },
+    "info": {
+      "exam_window": "Typically April - May (check official site)",
+      "fees": "See KEA website / brochure",
+      "contact": "KEA - Karnataka Examination Authority"
+    }
+  },
+
+  "comedk": {
+    "name": "COMED-K",
+    "official": "https://www.comedk.org/",
+    "eligibility": {
+      "required_subjects": ["Physics", "Chemistry", "Mathematics"],
+      "min_percentage_general": 45,
+      "min_percentage_karnataka_reserved": 40,
+      "notes": "COMED-K UGET is for engineering seats in private unaided colleges. Check latest brochure for architecture, B.Sc etc."
+    },
+    "info": {
+      "exam_window": "Typically April - May (check official site)",
+      "fees": "Check COMED-K brochure",
+      "contact": "COMED-K Secretariat"
+    }
+  }
+}

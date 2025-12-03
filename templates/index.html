@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Admissio — Student Admission Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="/static/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>🎓Student Admission Chatbot</h1>
+          <p class="subtitle">Your Admission Assistant Of Engineering </p>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="micBtn" class="pill">🎙️ Speak</button>
+        <button id="stopMicBtn" class="pill" style="display:none">⏹ Stop</button>
+      </div>
+      <div class="actions">
+        <button id="kcetBtn" class="pill">Check KCET</button>
+        <button id="comedkBtn" class="pill">Check COMED-K</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="chat-pane">
+        <div id="chatbox" class="chatbox"></div>
+
+        <div id="eligibilityForm" class="eligibility-form hidden">
+          <h3>Eligibility Check</h3>
+          <label>Subjects (comma separated)</label>
+          <input id="ef-subjects" placeholder="Physics, Mathematics, Chemistry">
+          <label>Percentage (overall in PCM / 12th)</label>
+          <input id="ef-percentage" type="number" placeholder="e.g. 85">
+          <label>Year
+            s studied in Karnataka (for KCET)</label>
+          <input id="ef-years" type="number" placeholder="e.g. 8">
+          <label>Category</label>
+          <select id="ef-category">
+            <option value="general">General</option>
+            <option value="reserved">Reserved</option>
+          </select>
+          <div class="form-actions">
+            <button id="ef-submit" class="primary">Check</button>
+            <button id="ef-cancel" class="muted">Cancel</button>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <input id="userInput" placeholder="Ask about admissions, or click 'Check KCET' / 'Check COMED-K'/'press speak'" />
+          <button id="sendBtn">Send</button>
+        </div>
+      </section>
+
+      <aside class="info-pane">
+        <div class="card">
+          <h4>Quick actions</h4>
+          <button class="quick" data-msg="What is KCET eligibility?">What is KCET eligibility?</button>
+          <button class="quick" data-msg="What is COMED-K eligibility?">What is COMED-K eligibility?</button>
+          <button class="quick" data-msg="How do I apply for B.Tech in Karnataka?">How to apply for B.Tech?</button>
+        </div>
+
+        <div class="card">
+          <h4>Official links</h4>
+          <ul id="officialLinks">
+            <li><a href="https://kea.kar.nic.in/" target="_blank">KEA (KCET)</a></li>
+            <li><a href="https://www.comedk.org/" target="_blank">COMED-K</a></li>
+          </ul>
+        </div>
+      
+    </main>
+
+    
+  </div>
+
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>
